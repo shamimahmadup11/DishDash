@@ -1,0 +1,45 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    gap: 20px;
+}
+.input-field{
+    height: 60px;
+    width: 500px;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+.btn {
+    height: 60px;
+    width: 120px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(6, 6, 94); /* Default button color */
+    color: white;
+  }
+  
+  .btn:hover {
+    background-color:rgb(6, 6, 94); /* Button color on hover */
+  }
+  
+  .btn:active {
+    background-color: rgb(6, 6, 94); /* Button color when pressed */
+  }
+  
+  .btn:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
