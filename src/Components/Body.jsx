@@ -4,21 +4,22 @@ import Restraunt from "./Restraunt";
 import '../Body.css';
 import Shimer from './Shimer'
 
+function filterData(searchText, sowData) {
+  return sowData.filter((data) => {
+    return data.name.toLowerCase().includes(searchText.toLowerCase());
+  });
+}
+
 const Body = () => {
   const [searchText, setSearchText] = useState('');
   const [sowData, setSowData] = useState([]); 
-
   
   useEffect(() => {
     getRestraunt();
 
   }, []);
 
-  function filterData(searchText, sowData) {
-    return sowData.filter((data) => {
-      return data.name.toLowerCase().includes(searchText.toLowerCase());
-    });
-  }
+ 
 
   async function getRestraunt() {
     try {

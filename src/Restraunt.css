@@ -1,22 +1,25 @@
 .restrount{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 10px 15px;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+
+
 }
 .Card{
-    height: 410px;
-    width: 360px;
+    height: 350px;
+    width: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     cursor: pointer;
     border-radius: 10px;
 }
 .Card:hover{
-    transform: scale(1.01);
+    transform: scale(0.96);
     
 }
 .Card>img{
