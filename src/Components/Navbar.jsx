@@ -2,11 +2,11 @@ import { useState } from 'react'
 import '../Navbar.css'
 export default function Navbar() {
 
-    const [isloged, setIsloged]=useState(false);
+    const [isloged, setIsloged] = useState(false);
 
-function toggle(){
-    setIsloged(!isloged);
-}
+    function toggle() {
+        setIsloged(!isloged);
+    }
     return (
         <div>
             <div className='nav'>
@@ -25,8 +25,8 @@ function toggle(){
                     <li>Contact</li>
                     <li>Helps</li>
                     <li className='signIn' onClick={toggle}>
-                         {isloged ? 'Sign Up' : 'Log In'}
-</li>
+                        {isloged ? 'Sign Up' : 'Log In'}
+                    </li>
                     <li>
                         <svg width="24" height="24" viewBox="0 0 24 24">
                             <path
