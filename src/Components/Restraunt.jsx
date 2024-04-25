@@ -1,5 +1,6 @@
 
 import '../Restraunt.css'
+// eslint-disable-next-line react/prop-types
 const Restraunt = ({name, image, caloriesPerServing, cuisine, rating }) => {
   return (
     <div className="restrount">
@@ -12,7 +13,7 @@ const Restraunt = ({name, image, caloriesPerServing, cuisine, rating }) => {
       {/* <div>Review Count: {reviewCount}</div> */}
       {/* <div>Prep Time (minutes): {prepTimeMinutes}</div> */}
       {/* <div>Cook Time (minutes): {cookTimeMinutes}</div> */}
-      <div>Calories Per Serving: {caloriesPerServing}</div>
+      <div>Calories Per Serving: {caloriesPerServing} cal</div>
       {/* <div>Servings: {servings}</div> */}
       {/* <div>Meal Type: {mealType.join(', ')}</div> */}
       {/* <div>Ingredients:</div> */}
