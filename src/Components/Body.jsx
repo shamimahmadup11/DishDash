@@ -2,6 +2,7 @@
 import  { useEffect, useState } from "react";
 import Restraunt from "./Restraunt";
 import '../Body.css';
+import Shimer from './Shimer'
 
 const Body = () => {
   const [searchText, setSearchText] = useState('');
@@ -30,7 +31,7 @@ const Body = () => {
     }
   }
 
-  return (
+  return sowData.length===0?(<Shimer/>): (
     <div className="body">
       <input className="input-field"
         type="text" 

@@ -66,3 +66,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.Shimer-card{
+  height: 400px;
+  width: 330px;
+  background-color: #b9bbbd;
+  margin: 40px;
+  border-radius: 10px;
+}
+.restrountList{
+  display: flex;
+  flex-wrap: wrap;
+}

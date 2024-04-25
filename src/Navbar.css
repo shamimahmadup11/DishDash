@@ -6,14 +6,14 @@
 
 .nav{
     height: 85px;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 350px;
-    background: linear-gradient(10deg,rgb(41, 32, 32),rgb(6, 6, 94));
-    top: 0;
-    box-shadow: 10px 10px 10px rgba(12, 12, 55, 0.482)
+     gap: 100px;
+     background: linear-gradient(10deg,rgb(41, 32, 32),rgb(6, 6, 94));
+    box-shadow: 10px 10px 10px rgba(12, 12, 55, 0.482);
+
 }
 .nav ul {
     display: flex;
@@ -81,6 +81,15 @@
 
 /* Mobile View (576px and below) */
 @media screen and (max-width: 576px) {
+    .parentNavbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav{
+        width: 120px;
+    }
     .nav ul {
         gap: 10px;
     }

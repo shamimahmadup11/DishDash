@@ -8,7 +8,7 @@ export default function Navbar() {
         setIsloged(!isloged);
     }
     return (
-        <div>
+        <div className='parentNavbar'>
             <div className='nav'>
                 <ul>
                     <li>
