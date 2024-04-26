@@ -237,7 +237,11 @@ button[type="submit"]:hover {
 
 /* Add additional styles as needed */
 /* Base styles */
-.leftPart, .writePart {
+
+
+/* here is the cartbyid css   */
+
+/* .leftPart, .writePart {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
@@ -283,16 +287,97 @@ button[type="submit"]:hover {
   width: 120px;
   height: 60px;
   margin: 10px 0;
-  background-color: #1e90ff; /* Dark blue color */
+  background-color: #1e90ff; 
   color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  transition: transform 0.3s; /* Add transition for smooth scaling */
+  transition: transform 0.3s; 
 }
 
 .orderAddToCart button:hover {
-  transform: scale(1.01); /* Scale up on hover */
+  transform: scale(1.01); 
+}
+
+.orderAddToCart button:first-child {
+  margin-right: 0;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .leftPart, .writePart {
+    width: 50%;
+  }
+
+  .image-name {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .image-name img {
+    width: 300px;
+    margin: 0 40px 0 0;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .leftPart, .writePart {
+    width: 100%;
+  }
+
+  .incrimentDecrimentbtn button, .orderAddToCart button {
+    margin-left: 0;
+  }
+
+  .orderAddToCart button:first-child {
+    margin-right: 10px;
+  }
+} */
+
+
+/* Base styles */
+.leftPart, .writePart {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-name img {
+  max-width: 100%; /* Adjusted to ensure responsiveness */
+  height: auto;
+  max-height: 400px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.incrimentDecrimentbtn, .orderAddToCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.incrimentDecrimentbtn button, .orderAddToCart button {
+  width: 120px;
+  height: 60px;
+  margin: 10px 0;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.incrimentDecrimentbtn button:hover, .orderAddToCart button:hover {
+  transform: scale(1.01);
 }
 
 .orderAddToCart button:first-child {
@@ -318,15 +403,16 @@ button[type="submit"]:hover {
 
 /* Responsive styles for mobile */
 @media (max-width: 767px) {
-  .leftPart, .writePart {
-    width: 100%;
+  .incrimentDecrimentbtn, .orderAddToCart {
+    flex-direction: column;
   }
 
   .incrimentDecrimentbtn button, .orderAddToCart button {
-    margin-left: 0;
+    width: 100%; /* Adjusted for mobile */
+    margin: 10px 0;
   }
 
   .orderAddToCart button:first-child {
-    margin-right: 10px;
+    margin-right: 0;
   }
 }
