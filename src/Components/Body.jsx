@@ -3,6 +3,8 @@ import  { useEffect, useState } from "react";
 import Restraunt from "./Restraunt";
 import '../Body.css';
 import Shimer from './Shimer'
+// import {Link} from 'react-router-dom'
+// import Menu from "./Menu"
 
 function filterData(searchText, sowData) {
   return sowData.filter((data) => {
@@ -25,8 +27,8 @@ const Body = () => {
     try {
       const response = await fetch('https://dummyjson.com/recipes');
       const data = await response.json();
-
       setSowData(data?.recipes);
+      console.log(data?.recipes[0]?.id)
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -56,7 +58,7 @@ const Body = () => {
       
       <div className="restrount">
         {sowData.map((res) => (
-          <Restraunt key={res.id} {...res} />
+            <Restraunt key={res.id} {...res}/> 
         ))}
       </div>
     </div>
