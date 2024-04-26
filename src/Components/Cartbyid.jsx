@@ -2,7 +2,7 @@
 import '../footer.css'
 
 const Cartbyid = (props) => {
-    console.log(props)
+    // console.log(props)
     return (
         <div>
             {/* {props.id} */}

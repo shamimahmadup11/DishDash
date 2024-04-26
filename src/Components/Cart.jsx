@@ -22,7 +22,6 @@ const Cart = () => {
     }
 
     const {id}=useParams();
-    console.log(id)
   return (
     <div>
     {dataId.map((res) => {

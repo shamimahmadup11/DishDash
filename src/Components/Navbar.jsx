@@ -31,7 +31,7 @@ export default function Navbar() {
                     <Link to="LoginSinup" ><li className='signIn' onClick={toggle}>
                         {isloged ? 'Log Out' : 'Log In'}
                     </li></Link>
-                    <Link to="/Cart"> <li>
+                    <Link to="/AddToCart"> <li>
                         <svg width="24" height="24" viewBox="0 0 24 24">
                             <path
                                 fill="currentColor"

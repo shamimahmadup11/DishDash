@@ -10,6 +10,7 @@ import Help from './Components/Help'
 import Loginsingup from './Components/Loginsingup'
 import Cart from './Components/Cart'
 import Menu from './Components/Menu'
+import AddToCartList from './Components/AddToCartList'
 function App() {
   const router= createBrowserRouter([
     {
@@ -40,6 +41,10 @@ function App() {
     {
       path:"/Menu",
       element: <><Navbar/> <Menu/><Footer/></>
+    },
+    {
+      path:"/AddToCart",
+      element: <><Navbar/> <AddToCartList/><Footer/></>
     },
   ])
 
