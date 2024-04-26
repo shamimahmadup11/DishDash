@@ -65,7 +65,7 @@
     }
 
     .nav ul li {
-        width: 86%; /* Adjust width for better spacing */
+        width: 121%;/* Adjust width for better spacing */
     }
 
     .nav ul li img {
@@ -87,6 +87,7 @@
         align-items: center;
         justify-content: center;
     }
+   
     .nav{
         width: 100%;
     }

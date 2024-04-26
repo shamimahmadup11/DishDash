@@ -9,7 +9,7 @@ const Cartbyid = (props) => {
             <div className="leftPart" style={{ float: 'left', width: '50%' }}>
                 <div className="image-name">
                     <img src={props.image} alt="loading image .." />
-                    <h1>{props.name}</h1>
+                    <h3>{props.name}</h3>
                 </div>
 
                 <div className="incrimentDecrimentbtn"> <button>+</button>
