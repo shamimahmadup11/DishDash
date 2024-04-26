@@ -368,8 +368,8 @@ button[type="submit"]:hover {
   width: 120px;
   height: 60px;
   margin: 10px 0;
-  background-color: #1e90ff;
-  color: white;
+  background-color: #09053a;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
