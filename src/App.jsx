@@ -34,8 +34,8 @@ function App() {
       element: <><Navbar/> <Loginsingup/><Footer/></>
     },
     {
-      path:"/Cart",
-      element: <><Navbar/> <Cart/><Footer/></>
+      path:"/Cart/:id",
+      element: <><Navbar/> <Cart/ ><Footer/></>
     },
     {
       path:"/Menu",

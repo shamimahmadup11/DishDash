@@ -189,3 +189,144 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+
+
+
+
+/* .leftPart {
+  width: 50%;
+
+}
+
+.writePart {
+  width: 50%;
+}
+
+.image-name {
+  display: flex;
+  align-items: center;
+}
+
+.image-name img {
+  height: 310px;
+ margin: 40px 40px;
+ border-radius: 10px;
+
+}
+
+.incrimentDecrimentbtn button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+   margin-left: 40px;
+}
+
+.orderAddToCart button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.orderAddToCart button:first-child {
+  margin-right: 10px;
+} */
+
+/* Add additional styles as needed */
+/* Base styles */
+.leftPart, .writePart {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-name img {
+  max-width: 400px;
+  width: auto;
+  max-height: 400px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.incrimentDecrimentbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.incrimentDecrimentbtn button{
+  width: 60px;
+  height: 30px;
+  margin: 10px 0;
+  background-color: rgb(226, 217, 217);
+  color: black;
+
+}
+
+.orderAddToCart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.orderAddToCart button {
+  width: 120px;
+  height: 60px;
+  margin: 10px 0;
+  background-color: #1e90ff; /* Dark blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.3s; /* Add transition for smooth scaling */
+}
+
+.orderAddToCart button:hover {
+  transform: scale(1.01); /* Scale up on hover */
+}
+
+.orderAddToCart button:first-child {
+  margin-right: 0;
+}
+
+/* Responsive styles for tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .leftPart, .writePart {
+    width: 50%;
+  }
+
+  .image-name {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .image-name img {
+    width: 300px;
+    margin: 0 40px 0 0;
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  .leftPart, .writePart {
+    width: 100%;
+  }
+
+  .incrimentDecrimentbtn button, .orderAddToCart button {
+    margin-left: 0;
+  }
+
+  .orderAddToCart button:first-child {
+    margin-right: 10px;
+  }
+}
