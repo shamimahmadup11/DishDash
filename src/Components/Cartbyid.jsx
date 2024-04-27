@@ -15,7 +15,7 @@ const Cartbyid = (props) => {
                 <div className="incrimentDecrimentbtn"> <button>+</button>
                     <button>-</button></div>
                 <div className="orderAddToCart">
-                    <button>Oreder</button>
+                    <button>Order</button>
                     <button>Add to Cart</button>
                 </div>
             </div>

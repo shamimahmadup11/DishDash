@@ -36,7 +36,8 @@
 .nav ul li img{
     width: 130px;
     height: 80px;
-    border-radius: 10%;
+    border-radius: 50%;
+    color: white;
 }
 .nav ul li svg{
     height: 70px;

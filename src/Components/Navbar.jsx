@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../Navbar.css'
 import { Link } from 'react-router-dom'
+import DishDashLogo from './DishDahlogo.jpeg';
 export default function Navbar() {
 
     const [isloged, setIsloged] = useState(false);
@@ -15,7 +16,7 @@ export default function Navbar() {
                 <ul>
 
                     <Link to="/"><li>
-                        <img src="https://play-lh.googleusercontent.com/qKbCVs3UjZz_5CDowadsN5TbcCWZGbFx2XzAiBlHLARHN_rzheWgWKvXrAlMEvqt2Q=w480-h960-rw" alt="" />
+                        <img src={DishDashLogo} alt="" />
                     </li></Link>
 
                     <li>
@@ -31,7 +32,7 @@ export default function Navbar() {
                     <Link to="LoginSinup" ><li className='signIn' onClick={toggle}>
                         {isloged ? 'Log Out' : 'Log In'}
                     </li></Link>
-                    <Link to="/AddToCart"> <li>
+                    <Link to="/Cart"> <li>
                         <svg width="24" height="24" viewBox="0 0 24 24">
                             <path
                                 fill="currentColor"
