@@ -4,6 +4,7 @@ import Restraunt from "./Restraunt";
 import '../Body.css';
 import Shimer from './Shimer';
 import { Link } from 'react-router-dom';
+import useOnline from "../utils/useOnline";
 
 function filterData(searchText, sowData) {
   return sowData.filter((data) => {
@@ -29,6 +30,17 @@ const Body = () => {
       console.error('Error fetching data:', error);
     }
   }
+
+const isOnline=useOnline();
+console.log(isOnline  )
+if(isOnline){
+  return (
+  <>
+  <h1> OOPS !</h1>
+  <h1> Your Internet Connectivity is note stable </h1>
+  </>
+  )}
+
 
   return sowData.length === 0 ? (<Shimer />) : (
     <div className="body">
