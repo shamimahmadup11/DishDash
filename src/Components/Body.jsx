@@ -79,7 +79,6 @@ if(isOnline){
     </div>
   );
 };
-
 export default Body;
 
 

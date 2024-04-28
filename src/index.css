@@ -81,3 +81,27 @@ align-items: center;
 justify-content: center;
 margin: 10px;
 }
+
+
+.logIng{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
+  gap: 50px;
+  margin: 20px 10px;
+}
+.formInput{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
+  gap: 50px;
+  margin: 20px 10px;
+}
+.formInput>input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

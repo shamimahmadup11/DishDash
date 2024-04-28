@@ -29,10 +29,10 @@ export default function Navbar() {
                     <Link to="/About"> <li>About</li></Link>
                     <Link to="/Contact"> <li>Contact</li></Link>
                     <Link to="/Help"> <li>Helps</li></Link>
-                    <Link to="LoginSinup" ><li className='signIn' onClick={toggle}>
+                    <Link to="/Loginsignup" ><li className='signIn' onClick={toggle}>
                         {isloged ? 'Log Out' : 'Log In'}
                     </li></Link>
-                    <Link to="/Cart"> <li>
+                    <Link to="/AddToCart"> <li>
                         <svg width="24" height="24" viewBox="0 0 24 24">
                             <path
                                 fill="currentColor"

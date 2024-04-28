@@ -12,11 +12,18 @@ const Cartbyid = (props) => {
                     <h3>{props.name}</h3>
                 </div>
 
-                <div className="incrimentDecrimentbtn"> <button>+</button>
-                    <button>-</button></div>
+                {/* <div className="incrimentDecrimentbtn"> <button>+</button>
+                    <button>-</button></div> */}
                 <div className="orderAddToCart">
-                    <button>Order</button>
-                    <button>Add to Cart</button>
+                    <button>Oreder</button>
+                    <button>Add to Cart  
+                    {/* <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                fill="currentColor"
+                                d="M17 11H5a2 2 0 0 0-2-2v-4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4a2 2 0 0 0-2 2zM8 5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H8zm10 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                            />
+                        </svg> */}
+                    </button>
                 </div>
             </div>
 
