@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// eslint-disable-next-line react/prop-types
 const Loginsingup = ({ isLogin }) => {
 
     const [email, setEmail] = useState('');
@@ -43,4 +44,4 @@ const Loginsingup = ({ isLogin }) => {
 }
 
 
-export default Loginsingup
+export default Loginsingup;

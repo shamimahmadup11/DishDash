@@ -15,7 +15,7 @@ const Cartbyid = (props) => {
                 {/* <div className="incrimentDecrimentbtn"> <button>+</button>
                     <button>-</button></div> */}
                 <div className="orderAddToCart">
-                    <button>Oreder</button>
+                    <button>Order</button>
                     <button>Add to Cart  
                     {/* <svg width="24" height="24" viewBox="0 0 24 24">
                             <path
