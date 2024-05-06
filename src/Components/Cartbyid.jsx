@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import '../footer.css'
+import { Link } from 'react-router-dom'
 
 const Cartbyid = (props) => {
     // console.log(props)
@@ -15,7 +16,10 @@ const Cartbyid = (props) => {
                 {/* <div className="incrimentDecrimentbtn"> <button>+</button>
                     <button>-</button></div> */}
                 <div className="orderAddToCart">
+                    <Link to="/PaymentComponent">
                     <button>Order</button>
+                    </Link>
+                    
                     <button>Add to Cart  
                     {/* <svg width="24" height="24" viewBox="0 0 24 24">
                             <path

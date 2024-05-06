@@ -3,7 +3,7 @@
 const AddToCartList= () => {
   return (
     <div>
-      <h1>This is my  cart list </h1>
+      <h1> there is nothing </h1>
     </div>
   )
 }

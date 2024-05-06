@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
-
 import Cartbyid from "./Cartbyid";
-
-
-
 const Cart = () => {
     const [dataId , setDataId]=useState([]);
     useEffect(()=>{
@@ -20,7 +16,6 @@ const Cart = () => {
             console.error('Error fetching data:', error);
           }
     }
-
     const {id}=useParams();
   return (
     <div>

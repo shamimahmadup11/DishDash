@@ -11,6 +11,7 @@ import Loginsingup from './Components/Loginsingup'
 import Cart from './Components/Cart'
 import Menu from './Components/Menu'
 import AddToCartList from './Components/AddToCartList'
+import PaymentComponent from './Components/PaymentComponents'
 function App() {
   const router= createBrowserRouter([
     {
@@ -45,6 +46,10 @@ function App() {
     {
       path:"/AddToCart",
       element: <><Navbar/> <AddToCartList/><Footer/></>
+    },
+    {
+      path:"/PaymentComponent",
+      element: <><Navbar/> <PaymentComponent/><Footer/></>
     },
   ])
 
