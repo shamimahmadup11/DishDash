@@ -1,10 +1,14 @@
-import  { useState } from 'react';
-import '../Payment.csss'
+import { useState } from 'react';
+import '../Payment.css'; 
+// import { Navigate } from 'react-router-dom';
 
 function PaymentComponent() {
+ 
+  
   const [cardNumber, setCardNumber] = useState('');
   const [expiry, setExpiry] = useState('');
   const [cvv, setCVV] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleCardNumberChange = (e) => {
     setCardNumber(e.target.value);
@@ -20,8 +24,23 @@ function PaymentComponent() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-   alert("Payment has been done")
+
+    // Basic validation
+    if (!cardNumber || !expiry || !cvv) {
+      setErrorMessage('Please fill in all fields');
+      return;
+    }
+
+    // You can integrate with a payment gateway here
+    // For demonstration purposes, I'll just simulate a successful payment
+    // Replace this with actual payment gateway integration code
+
+    alert('Payment successful!');
+    // Reset form after successful payment
+    setCardNumber('');
+    setExpiry('');
+    setCVV('');
+    setErrorMessage('');
   };
 
   return (
@@ -40,6 +59,7 @@ function PaymentComponent() {
           <label htmlFor="cvv">CVV</label>
           <input type="text" id="cvv" value={cvv} onChange={handleCVVChange} />
         </div>
+        {errorMessage && <div className="error">{errorMessage}</div>}
         <button type="submit">Submit Payment</button>
       </form>
     </div>
