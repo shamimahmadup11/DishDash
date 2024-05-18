@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin: 10px 40px ;
 }
 .Card {
   height: 360px;
@@ -12,8 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
-  /* background-color: antiquewhite; */
+  
   cursor: pointer;
   border-radius: 10px;
   color: black;
