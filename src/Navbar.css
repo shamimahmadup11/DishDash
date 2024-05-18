@@ -5,7 +5,7 @@
 }
 
 .nav{
-    height: 85px;
+    height: 65px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -59,8 +59,10 @@
 }
 
 .signIn{
+    height: 50px;
     background-color: rgb(0, 80, 33);
     border-radius: 10px;
+    
 } 
 
 

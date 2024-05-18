@@ -7,7 +7,7 @@
     gap: 20px;
 }
 .input-field{
-    height: 60px;
+    height: 40px;
     width: 500px;
     background-color: white;
     color: black;
@@ -16,7 +16,7 @@
     border-radius: 10px;
 }
 .btn {
-    height: 60px;
+    height: 40px;
     width: 120px;
     display: inline-block;
     padding: 10px 20px;
@@ -31,15 +31,24 @@
     color: white;
   }
   
-  .btn:hover {
-    background-color:rgb(6, 6, 94); /* Button color on hover */
+  .number-input{
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding-left: 30px;
+    border-radius: 10px;
   }
+  .btn:hover {
+    background-color:rgb(6, 6, 94); 
   
   .btn:active {
-    background-color: rgb(6, 6, 94); /* Button color when pressed */
+    background-color: rgb(6, 6, 94); 
   }
   
   .btn:focus {
-    outline: none; /* Remove focus outline */
+    outline: none; 
   }
   
+}

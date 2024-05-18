@@ -5,7 +5,7 @@ const Restraunt = ({name, image, caloriesPerServing, cuisine, rating }) => {
   return (
     <div className="restrount">
 <div className="Card">
-      <img src={image} alt={name}  height={'200px'}  width={'250px'}/>
+      <img src={image} alt={name}  height={'200px'}  width={'208px'}/>
       <div className="name">{name}</div>
       <div className='cuisines'> {cuisine} </div>
       {/* <div>Difficulty: {difficulty}</div> */}
