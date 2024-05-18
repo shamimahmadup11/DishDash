@@ -35,11 +35,12 @@ const Body = () => {
   };
 
   const handleRatingChange = (e) => {
-    if(e.target.value<=5 || e.target.vlaue>0){
+    if(e.target.value<=5 || e.target.vlaue>=0 ){
       const ratingValue = e.target.value;
       setRating(ratingValue);
       filterData(searchText, ratingValue);
     }
+    
     else{
       return ;
     }

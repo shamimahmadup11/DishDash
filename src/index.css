@@ -67,39 +67,24 @@ button:focus-visible {
   }
 }
 
-.Shimer-card{
-  height: 200px;
-  width: 200px;
-  background-color: #b9bbbd;
-  margin: 40px;
-  border-radius: 10px;
-}
-.restrountList{
-  display: flex;
-  flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-margin: 10px;
-}
 
-
-.logIng{
+.logIng {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:  center;
+  align-items: center;
   gap: 50px;
   margin: 20px 10px;
 }
-.formInput{
+.formInput {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:  center;
+  align-items: center;
   gap: 50px;
   margin: 20px 10px;
 }
-.formInput>input{
+.formInput > input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -134,5 +119,41 @@ margin: 10px;
   }
 }
 
+.Shimer-card {
+  height: 200px;
+  width: 200px;
+  background-color: #b9bbbd;
+  border-radius: 10px;
+  margin: 0 40px;
+}
+.restrountList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 40px;
+  gap: 80px;
+}
+.second-simmercard {
 
+  height: 20px;
+  width: 200px;
+  background-color: #b9bbbd;
+  
+  border-radius: 10px;
+}
 
+.third-shimmercard {
+  height: 20px;
+  width: 200px;
+  background-color: #b9bbbd;
+  border-radius: 10px;
+}
+
+.main-shimmer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
