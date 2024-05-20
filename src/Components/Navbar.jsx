@@ -18,11 +18,14 @@ export default function Navbar() {
                        <h3>Dish Dash</h3>
                     </li></Link>
 
+                   
+                    <Link to="/LocationComponents">
                     <li>
                         <svg width="24" height="24" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10z" />
                         </svg>
                     </li>
+                    </Link>
                 </ul>
                 <ul>
                     <Link to="/About"> <li>About</li></Link>

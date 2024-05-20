@@ -22,6 +22,8 @@
     gap: 10px;
 }
 .nav ul li{
+    height: 45px;
+    width: 120px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -30,29 +32,34 @@
     font-style: normal;
     font-weight: bold;
     color: white;
-    height: 60px;
-    width: 140px;
 }
-.nav ul li h3{
+.nav ul li h3 {
     font-family: 'Arial Black', sans-serif;
-    font-size: 20px; 
+    font-size: 18px; 
+
     color: #f3f8f8;
     text-transform: uppercase;
-    letter-spacing: 0.5px; 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
-    padding: 3px;
-    border: 1px solid #06030ecf; 
-    border-radius: 3px; 
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+   /*  height: 45px;
+    padding: 10px; 
+    border: 1px solid #06030ecf;
+    border-radius: 3px;
     background: linear-gradient(to right, #889ace, #010b42);
-    box-shadow: 0px 1px 2px rgba(194, 210, 102, 0.1); 
-    display: inline-block;
-    transform: rotate(-2deg); 
-    transition: transform 0.3s ease;
-    
+    box-shadow: 0px 1px 2px rgba(194, 210, 102, 0.1);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    transition: transform 0.3s ease; */
 }
+
+/* Remove hover effect */
 .nav ul li h3:hover {
-    transform: rotate(2deg);
-  }
+    transform: none; /* Ensures no rotation on hover */
+}
+
+
 .nav ul li svg{
     height: 70px;
     width: 40px;

@@ -12,6 +12,7 @@ import Cart from './Components/Cart'
 import Menu from './Components/Menu'
 import AddToCartList from './Components/AddToCartList'
 import PaymentComponent from './Components/PaymentComponents'
+import LocationComponents from './Components/LocationComponents'
 function App() {
   const router= createBrowserRouter([
     {
@@ -50,6 +51,10 @@ function App() {
     {
       path:"/PaymentComponent",
       element: <><Navbar/> <PaymentComponent/><Footer/></>
+    },
+    {
+      path:"/LocationComponents",
+      element: <><Navbar/> <LocationComponents/><Footer/></>
     },
   ])
 
