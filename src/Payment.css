@@ -1,39 +1,75 @@
-.payment-container {
-  width: 400px;
-  margin: 50px auto; /* Center the container horizontally and add vertical spacing */
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+/* Payment.css */
+
+.paymentmethod {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
 }
 
-.payment-container h2 {
+h2 {
+  text-align: center;
+  color: #333;
   margin-bottom: 20px;
 }
 
-.payment-container label {
+.formhandle {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+
+}
+
+.div{
+  margin-bottom: 15px;
+}
+
+label {
   display: block;
+  font-weight: bold;
   margin-bottom: 5px;
+  color: #555;
 }
 
-.payment-container input[type="text"] {
+.inputHndle {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-.payment-container button[type="submit"] {
-  width: 100%;
+.inputHndle:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  width: 200px;
   padding: 10px;
+  background-color: #007BFF;
   border: none;
-  border-radius: 3px;
-  background-color: #007bff;
-  color: #fff;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.payment-container button[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: #0056b3;
 }
