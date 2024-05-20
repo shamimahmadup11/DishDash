@@ -123,7 +123,7 @@ button:focus-visible {
   height: 200px;
   width: 200px;
   background-color: #b9bbbd;
-  border-radius: 10px;
+ 
   margin: 0 40px;
 }
 .restrountList {
@@ -139,14 +139,15 @@ button:focus-visible {
   height: 20px;
   width: 200px;
   background-color: #b9bbbd;
-  border-radius: 10px;
+  
 }
 
 .third-shimmercard {
   height: 20px;
-  width: 200px;
+  width: 120px;
   background-color: #b9bbbd;
-  border-radius: 10px;
+ 
+
 }
 
 .main-shimmer {
