@@ -3,7 +3,7 @@ import '../footer.css'
 import { Link } from 'react-router-dom'
 
 const Cartbyid = (props) => {
-    // console.log(props)
+   
     return (
         <div>
             {/* {props.id} */}

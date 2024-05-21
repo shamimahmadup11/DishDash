@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
 const About = () => {
+  const {user}=useContext(UserContext)
   return (
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       <h1>About DishDash</h1>
+      <div>{user.name}</div>
+      <div>{user.email}</div>
       <p>
         Welcome to <strong>DishDash</strong>, your go-to app for discovering delicious recipes and managing your culinary adventures. Our mission is to make cooking easy, fun, and accessible to everyone, whether you are a seasoned chef or a kitchen newbie.
       </p>

@@ -1,7 +1,10 @@
 
 import '../Restraunt.css'
+import { useContext } from 'react';
+import userContext from '../utils/UserContext';
 // eslint-disable-next-line react/prop-types
 const Restraunt = ({name, image, caloriesPerServing, cuisine, rating }) => {
+  const {user}=useContext(userContext)
   return (
     <div className="restrount">
 <div className="Card">
@@ -14,6 +17,7 @@ const Restraunt = ({name, image, caloriesPerServing, cuisine, rating }) => {
       {/* <div>Prep Time (minutes): {prepTimeMinutes}</div> */}
       {/* <div>Cook Time (minutes): {cookTimeMinutes}</div> */}
       <div>Calories Per Serving: {caloriesPerServing} cal</div>
+      <div>{user.email}</div>
       {/* <div>Servings: {servings}</div> */}
       {/* <div>Meal Type: {mealType.join(', ')}</div> */}
       {/* <div>Ingredients:</div> */}

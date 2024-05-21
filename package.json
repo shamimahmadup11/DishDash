@@ -12,6 +12,7 @@
   "dependencies": {
     "@stripe/stripe-js": "^3.3.0",
     "axios": "^1.7.0",
+    "firebase": "^10.12.0",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
