@@ -17,7 +17,7 @@ const Restraunt = ({name, image, caloriesPerServing, cuisine, rating }) => {
       {/* <div>Prep Time (minutes): {prepTimeMinutes}</div> */}
       {/* <div>Cook Time (minutes): {cookTimeMinutes}</div> */}
       <div>Calories Per Serving: {caloriesPerServing} cal</div>
-      <div>{user.email}</div>
+      {/* <div>{user.email}</div> */}
       {/* <div>Servings: {servings}</div> */}
       {/* <div>Meal Type: {mealType.join(', ')}</div> */}
       {/* <div>Ingredients:</div> */}

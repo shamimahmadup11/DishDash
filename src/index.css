@@ -161,6 +161,8 @@ button:focus-visible {
 
 /* AddToCartList.css */
 
+/* AddToCartList.css */
+
 .cart-container {
   max-width: 800px;
   margin: 0 auto;
@@ -177,10 +179,9 @@ button:focus-visible {
 }
 
 .cart-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .cart-item {
@@ -188,8 +189,8 @@ button:focus-visible {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 200px;
-  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
   transition: transform 0.3s;
 }
 
@@ -198,8 +199,10 @@ button:focus-visible {
 }
 
 .cart-item-image {
-  width: 100%;
-  height: auto;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  float: left;
 }
 
 .cart-item-details {
@@ -208,6 +211,139 @@ button:focus-visible {
 
 .cart-item-details h2 {
   font-size: 1.2em;
-  margin: 0;
+  margin: 10px 0;
   font-family: 'Arial, sans-serif';
+}
+
+.cart-item-details p {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.cart-item-details button {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.cart-item-details button:hover {
+  background-color: #0056b3;
+}
+
+/* 
+for the cartitembyid
+ */
+ /* footer.css */
+
+.cart-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.leftPart {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.image-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-name img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.image-name h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.orderAddToCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.orderAddToCart button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.orderAddToCart button:hover {
+  background-color: #3e8e41;
+}
+
+.writePart {
+  float: right;
+  width: 50%;
+  padding: 20px;
+}
+
+.writePart div {
+  margin-bottom: 20px;
+}
+
+.writePart h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.writePart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.writePart li {
+  margin-bottom: 10px;
+}
+
+.writePart li:before {
+  content: "\2022";
+  color: #4CAF50;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.ToastContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.ToastContainer.toast {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ToastContainer.toast:hover {
+  background-color: #3e8e41;
 }
