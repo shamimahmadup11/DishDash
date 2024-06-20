@@ -157,3 +157,57 @@ button:focus-visible {
   flex-direction: column;
   gap: 10px;
 }
+
+
+/* AddToCartList.css */
+
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial, sans-serif';
+}
+
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cart-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.cart-item:hover {
+  transform: translateY(-10px);
+}
+
+.cart-item-image {
+  width: 100%;
+  height: auto;
+}
+
+.cart-item-details {
+  padding: 10px;
+}
+
+.cart-item-details h2 {
+  font-size: 1.2em;
+  margin: 0;
+  font-family: 'Arial, sans-serif';
+}
