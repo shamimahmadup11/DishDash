@@ -241,19 +241,24 @@ for the cartitembyid
  */
  /* footer.css */
 
-.cart-container {
+ .cart-container {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .leftPart {
   float: left;
   width: 50%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image-name {
@@ -263,16 +268,23 @@ for the cartitembyid
 }
 
 .image-name img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-right: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-name img:hover {
+  transform: scale(1.1);
 }
 
 .image-name h3 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .orderAddToCart {
@@ -289,6 +301,7 @@ for the cartitembyid
   background-color: #4CAF50;
   color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .orderAddToCart button:hover {
@@ -299,6 +312,9 @@ for the cartitembyid
   float: right;
   width: 50%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .writePart div {
@@ -306,9 +322,10 @@ for the cartitembyid
 }
 
 .writePart h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .writePart ul {
@@ -319,6 +336,8 @@ for the cartitembyid
 
 .writePart li {
   margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
 }
 
 .writePart li:before {
@@ -326,6 +345,9 @@ for the cartitembyid
   color: #4CAF50;
   font-size: 18px;
   margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .ToastContainer {
@@ -334,6 +356,7 @@ for the cartitembyid
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .ToastContainer.toast {
@@ -342,8 +365,20 @@ for the cartitembyid
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .ToastContainer.toast:hover {
   background-color: #3e8e41;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
