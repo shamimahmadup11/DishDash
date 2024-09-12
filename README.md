@@ -8,7 +8,7 @@ Check out the live demo of DishDash: [DishDash Live](https://dish-dash-jd9h.verc
 
 ## Features
 
-- Browse a variety of dishes with detailed descriptions.
+- Browse a variety of dishes with detailed descriptions .
 - Add dishes to your cart and place orders.
 - User authentication using Firebase.
 - Responsive design for seamless experience on all devices.
