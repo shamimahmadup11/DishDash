@@ -1,6 +1,6 @@
 # DishDash
 
-DishDash is a web application for browsing and ordering delicious dishes. It is built using React, Redux, and Firebase, and is hosted on Vercel.
+DishDash is a web application for browsing and ordering delicious dishes. It is built using React, Redux , and Firebase, and is hosted on Vercel.
 
 ## Live Demo
 
